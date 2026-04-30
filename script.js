@@ -183,9 +183,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================
     // CONSOLE MESSAGE
     // ================================
-    console.log('%c👋 Hello! Thanks for checking out my portfolio.', 'color: #00d4ff; font-size: 16px; font-weight: bold;');
-    console.log('%cInterested in working together? Let\'s connect!', 'color: #b4bcd0; font-size: 14px;');
-    console.log('%cEmail: muhammadahmedhassan60@gmail.com', 'color: #00d4ff; font-size: 14px;');
+    console.log('%c👋 Hello! Thanks for checking out my portfolio.', 'color: #10b981; font-size: 16px; font-weight: bold;');
+    console.log('%cInterested in working together? Let\'s connect!', 'color: #cbd5e1; font-size: 14px;');
+    console.log('%cEmail: iammuhammadahmedhassan@gmail.com', 'color: #10b981; font-size: 14px;');
 });
 
 // ================================
@@ -209,7 +209,7 @@ style.textContent = `
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 999;
-        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+        box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
     }
     
     .scroll-to-top.visible {
@@ -220,7 +220,7 @@ style.textContent = `
     .scroll-to-top:hover {
         background: var(--color-accent-secondary);
         transform: translateY(-5px);
-        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.6);
+        box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6);
     }
     
     .scroll-to-top:active {
@@ -246,7 +246,7 @@ style.textContent = `
             top: 80px;
             left: 0;
             right: 0;
-            background: rgba(10, 14, 26, 0.98);
+            background: rgba(15, 23, 42, 0.98);
             backdrop-filter: blur(12px);
             padding: 24px;
             gap: 20px;
