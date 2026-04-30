@@ -5,22 +5,22 @@
 
 /* CSS Variables */
 :root {
-    /* Colors - Professional Dark Theme */
-    --color-bg-primary: #0a0e1a;
-    --color-bg-secondary: #0f1420;
-    --color-bg-tertiary: #151b2e;
-    --color-bg-card: #1a2235;
+    /* Colors - Professional Slate Theme */
+    --color-bg-primary: #0f172a;
+    --color-bg-secondary: #1e293b;
+    --color-bg-tertiary: #334155;
+    --color-bg-card: #1e293b;
     
-    --color-accent-primary: #00d4ff;
-    --color-accent-secondary: #0099ff;
-    --color-accent-tertiary: #6366f1;
+    --color-accent-primary: #10b981;
+    --color-accent-secondary: #059669;
+    --color-accent-tertiary: #34d399;
     
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #b4bcd0;
-    --color-text-tertiary: #8892a6;
+    --color-text-primary: #f1f5f9;
+    --color-text-secondary: #cbd5e1;
+    --color-text-tertiary: #94a3b8;
     
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-border-hover: rgba(0, 212, 255, 0.3);
+    --color-border: rgba(148, 163, 184, 0.1);
+    --color-border-hover: rgba(16, 185, 129, 0.4);
     
     /* Typography */
     --font-primary: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -76,7 +76,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 14, 26, 0.9);
+    background: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
     z-index: 1000;
@@ -194,8 +194,8 @@ body {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(52, 211, 153, 0.08) 0%, transparent 50%),
         linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
     z-index: 0;
 }
@@ -208,8 +208,8 @@ body {
     right: 0;
     bottom: 0;
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
     opacity: 0.5;
 }
@@ -236,8 +236,8 @@ body {
 .hero-label {
     display: inline-block;
     padding: 8px 16px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     border-radius: 50px;
     color: var(--color-accent-primary);
     font-size: 13px;
@@ -254,11 +254,20 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(48px, 8vw, 84px);
+    font-size: clamp(52px, 8vw, 72px);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -1.5px;
+    color: var(--color-text-primary);
+}
+
+.hero-tagline {
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 600;
+    color: var(--color-accent-primary);
     margin-bottom: var(--spacing-md);
-    letter-spacing: -2px;
+    letter-spacing: -0.5px;
 }
 
 .title-line {
@@ -312,7 +321,7 @@ body {
     background: transparent;
     color: var(--color-accent-primary);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
 }
 
 .btn-secondary {
@@ -509,7 +518,7 @@ section {
     background: var(--color-accent-primary);
     border: 3px solid var(--color-bg-primary);
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
 }
 
 .timeline-content {
@@ -550,7 +559,7 @@ section {
     font-family: var(--font-mono);
     font-size: 14px;
     color: var(--color-text-tertiary);
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     padding: 6px 12px;
     border-radius: 6px;
 }
@@ -594,10 +603,10 @@ section {
     font-family: var(--font-mono);
     font-size: 12px;
     padding: 6px 12px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     color: var(--color-accent-primary);
     border-radius: 6px;
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 /* ================================
@@ -632,7 +641,7 @@ section {
 
 .project-card.featured {
     grid-column: span 1;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(52, 211, 153, 0.05) 100%);
     border-color: var(--color-accent-primary);
 }
 
@@ -650,7 +659,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--color-accent-primary);
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     padding: 6px 12px;
     border-radius: 6px;
     margin-bottom: var(--spacing-sm);
@@ -672,7 +681,7 @@ section {
 }
 
 .project-outcomes {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(16, 185, 129, 0.05);
     border-left: 3px solid var(--color-accent-primary);
     padding: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
@@ -749,15 +758,15 @@ section {
 .skill-item {
     font-size: 13px;
     padding: 8px 14px;
-    background: rgba(0, 212, 255, 0.08);
+    background: rgba(16, 185, 129, 0.08);
     color: var(--color-text-secondary);
     border-radius: 6px;
-    border: 1px solid rgba(0, 212, 255, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.15);
     transition: var(--transition-fast);
 }
 
 .skill-item:hover {
-    background: rgba(0, 212, 255, 0.15);
+    background: rgba(16, 185, 129, 0.15);
     color: var(--color-accent-primary);
     border-color: var(--color-accent-primary);
 }
@@ -815,7 +824,7 @@ section {
     font-family: var(--font-mono);
     font-size: 14px;
     color: var(--color-text-tertiary);
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     padding: 6px 12px;
     border-radius: 6px;
     white-space: nowrap;
@@ -849,15 +858,15 @@ section {
     font-family: var(--font-mono);
     font-size: 12px;
     padding: 6px 12px;
-    background: rgba(0, 212, 255, 0.08);
+    background: rgba(16, 185, 129, 0.08);
     color: var(--color-text-secondary);
     border-radius: 6px;
-    border: 1px solid rgba(0, 212, 255, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.15);
     transition: var(--transition-fast);
 }
 
 .course-tags span:hover {
-    background: rgba(0, 212, 255, 0.15);
+    background: rgba(16, 185, 129, 0.15);
     color: var(--color-accent-primary);
     border-color: var(--color-accent-primary);
 }
@@ -895,7 +904,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(52, 211, 153, 0.15) 100%);
     border-radius: 12px;
     color: var(--color-accent-primary);
 }
@@ -1048,15 +1057,15 @@ section {
     font-size: 15px;
     font-weight: 600;
     padding: 12px 20px;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.1) 100%);
     color: var(--color-accent-primary);
     border-radius: 8px;
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     transition: var(--transition-base);
 }
 
 .role-tags span:hover {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(52, 211, 153, 0.2) 100%);
     border-color: var(--color-accent-primary);
     transform: translateY(-2px);
 }
