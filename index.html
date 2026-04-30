@@ -1,201 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Software Engineer | Data | AI | ML Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Hassan | Data Engineer | QA Engineer | Product Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <!-- Navbar -->
-<nav>
-    <h2>Ahmed Hassan</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <span class="brand-name">Ahmed Hassan</span>
+            <span class="brand-tag">MSc Data Analytics</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="section hero">
-    <h1>Software Engineer | Data | AI | ML</h1>
-
-    <!-- CHANGE #1: Links moved to top (Umar Farooq style) -->
-    <p class="top-links">
-        <a href="https://github.com/mahmedhassan1" target="_blank">GitHub Profile↗</a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/muhammad-ahmed-hassan-87421419b/" target="_blank">LinkedIn Profile↗</a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="mailto:muhammadahmedhassan60@gmail.com" target="_blank">Email↗</a>
-    </p>
-
-    <!-- View My Work text under links -->
-    <p class="view-work">
-        <a href="#projects">View My Work</a>
-    </p>
-
-    <p>
-        MSc Data Analytics Graduate seeking opportunities as a Software Developer, 
-        QA Engineer, Data Engineer, and Technical Support Engineer. Strong foundation 
-        in Object-Oriented Programming, APIs, Cloud Systems, Machine Learning, and 
-        real-world application debugging.
-    </p>
-</section>
-
-<!-- About Section -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        I am an MSc Data Analytics graduate with 2+ years of experience in technical support, 
-        API integrations, debugging, and cloud-based systems. I have hands-on experience in 
-        Object-Oriented Programming (Python, C++, JavaScript), REST APIs, SQL, and Machine Learning. 
-        I specialize in troubleshooting complex systems, performing root cause analysis, and 
-        working with real-world applications including enterprise healthcare systems.
-    </p>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="grid">
-
-        <div class="card">
-            <h3>Programming & OOP</h3>
-            <p>Python, C++, JavaScript, Java, SQL</p>
+<section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <div class="hero-label">Available for Immediate Hire</div>
+        <h1 class="hero-title">
+            <span class="title-line">Data Engineer</span>
+            <span class="title-line">QA Engineer</span>
+            <span class="title-line">Product Manager</span>
+        </h1>
+        <p class="hero-description">
+            MSc Data Analytics graduate with 2+ years of hands-on experience in healthcare, 
+            banking, and SaaS platforms. Specialized in API testing, data pipeline development, 
+            SQL optimization, and enterprise system integration across Polygon EHR, Joblogic, 
+            and financial applications.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
         </div>
-
-        <div class="card">
-            <h3>AI, ML & Data</h3>
-            <p>Machine Learning, Data Analytics, Pandas, NumPy, Matplotlib, Seaborn</p>
+        <div class="hero-links">
+            <a href="mailto:muhammadahmedhassan60@gmail.com" class="hero-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                </svg>
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-ahmed-hassan-87421419b/" target="_blank" class="hero-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+                LinkedIn
+            </a>
+            <span class="hero-location">📍 Ireland</span>
         </div>
-
-        <div class="card">
-            <h3>Web & Software Development</h3>
-            <p>HTML, CSS, JavaScript, Flask, FastAPI, Bootstrap</p>
-        </div>
-
-        <div class="card">
-            <h3>APIs & Testing</h3>
-            <p>REST APIs, Webhooks, Postman, API Testing, Functional Testing, Debugging</p>
-        </div>
-
-        <div class="card">
-            <h3>Cloud Platforms</h3>
-            <p>AWS (RDS, EC2, CloudWatch), Azure (Data Factory, Blob Storage, DevOps)</p>
-        </div>
-
-        <div class="card">
-            <h3>Databases</h3>
-            <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase, Azure SQL</p>
-        </div>
-
     </div>
 </section>
 
-<!-- Projects Section (UNCHANGED) -->
-<section id="projects" class="section">
-    <h2>Projects & Real-World Experience</h2>
-    <div class="grid">
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="lead">
+                    MSc Data Analytics graduate with proven experience in enterprise software development, 
+                    quality assurance, and data engineering across healthcare, banking, and SaaS industries.
+                </p>
+                <p>
+                    My professional experience spans <strong>L3 technical support engineering</strong> at Joblogic 
+                    (SaaS field service management), <strong>healthcare application testing</strong> at MediConline 
+                    (Polygon EHR system), and <strong>fintech QA</strong> at Half Code (micro-finance platform). 
+                    I specialize in API testing, SQL optimization, database management, third-party integrations, 
+                    and building data pipelines that drive business intelligence.
+                </p>
+                <p>
+                    I bring a unique combination of <strong>technical depth</strong> (Python, SQL, C#/.NET) and 
+                    <strong>business acumen</strong> (client implementations, escalation management, process automation), 
+                    making me effective in both individual contributor and cross-functional leadership roles.
+                </p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-number">2+</div>
+                    <div class="highlight-label">Years Experience</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">3</div>
+                    <div class="highlight-label">Industry Sectors</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">15+</div>
+                    <div class="highlight-label">Major Projects</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Polygon EHR System – Real World Healthcare Application</h3>
-            <img src="polygon-ehr.png" alt="Polygon EHR Dashboard" style="width:100%; border-radius:10px; margin:15px 0;">
-            <p>
-                Worked on a real-world healthcare application (Polygon EHR) during professional training. 
-                Performed API testing and functional testing of application endpoints, validated workflows, 
-                and analyzed system behavior using debugging tools. Gained hands-on experience in enterprise 
-                application development, QA processes, and production-level systems.
-            </p>
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>Professional Experience</h2>
+        </div>
+        
+        <div class="timeline">
+            <!-- Joblogic -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div>
+                            <h3>Joblogic</h3>
+                            <p class="role">L3 Technical Support Engineer | Product Engineering</p>
+                        </div>
+                        <span class="period">2022 - 2024</span>
+                    </div>
+                    <p class="company-description">
+                        SaaS field service management platform serving 1000+ enterprise clients
+                    </p>
+                    <ul class="responsibilities">
+                        <li>Resolved escalated L3 tickets involving database issues, API failures, and application bugs across web, desktop, iOS, and Android platforms</li>
+                        <li>Wrote, maintained, and optimized complex SQL scripts for timesheet reporting, asset tracking, job analytics, and cost/invoice generation</li>
+                        <li>Integrated third-party accounting systems (Sage 50, Xero, QuickBooks) — validated API responses and financial data synchronization</li>
+                        <li>Developed coded forms, dashboards, and data sources in Visual Studio (C#/.NET) for custom client requirements</li>
+                        <li>Extracted and analyzed MongoDB data for specific customers to generate executive reports</li>
+                        <li>Led client implementation meetings, performed root cause analysis, and remotely debugged customer environments</li>
+                        <li>Contributed to AI-integrated ticketing solution to reduce L1 support dependencies</li>
+                        <li>Built Playwright automation scripts to test electronic form deletion workflows and validate UI consistency</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>SQL Server</span>
+                        <span>C#/.NET</span>
+                        <span>Visual Studio</span>
+                        <span>MongoDB</span>
+                        <span>REST APIs</span>
+                        <span>Postman</span>
+                        <span>Sage 50</span>
+                        <span>Xero</span>
+                        <span>QuickBooks</span>
+                        <span>Playwright</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MediConline / Polygon Data Labs -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div>
+                            <h3>MediConline (Polygon Data Labs)</h3>
+                            <p class="role">QA Engineer | Healthcare Solutions</p>
+                        </div>
+                        <span class="period">2023 - 2024</span>
+                    </div>
+                    <p class="company-description">
+                        Healthcare technology company specializing in Electronic Health Records (EHR) systems
+                    </p>
+                    <ul class="responsibilities">
+                        <li>Performed manual and API testing of Polygon EHR workflows — authentication, role-based access control, appointment scheduling, patient records, and document management</li>
+                        <li>Created structured test cases in Postman and validated healthcare application endpoints for compliance and functionality</li>
+                        <li>Tested Stripe payment integration for patient billing and financial transactions</li>
+                        <li>Reported bugs to maintenance team with detailed reproduction steps and impact analysis</li>
+                        <li>Collaborated with developers on feature implementation for clients, translating requirements into technical specifications</li>
+                        <li>Built clinic dashboards and generated financial revenue reports for management and clients using SQL queries</li>
+                        <li>Analyzed cost and accounting data to support healthcare operations decision-making</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Polygon EHR</span>
+                        <span>Postman</span>
+                        <span>REST APIs</span>
+                        <span>SQL</span>
+                        <span>Stripe</span>
+                        <span>Healthcare HIPAA</span>
+                        <span>Test Case Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Half Code -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div>
+                            <h3>Half Code</h3>
+                            <p class="role">QA Engineer | Fintech Testing</p>
+                        </div>
+                        <span class="period">2023</span>
+                    </div>
+                    <p class="company-description">
+                        Micro-finance application platform for loan management and financial transactions
+                    </p>
+                    <ul class="responsibilities">
+                        <li>Conducted functional and database testing of loan approval workflows and financial transaction records</li>
+                        <li>Performed SQL-based validation to ensure data integrity across transaction lifecycle</li>
+                        <li>Tested payment processing, interest calculations, and compliance features</li>
+                        <li>Documented test results and collaborated with development team on bug resolution</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>SQL Testing</span>
+                        <span>Financial Systems</span>
+                        <span>Functional Testing</span>
+                        <span>Payment Processing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tritech.ie -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div>
+                            <h3>Tritech.ie</h3>
+                            <p class="role">QA Engineer | Business Intelligence Developer</p>
+                        </div>
+                        <span class="period">2022 - 2023</span>
+                    </div>
+                    <p class="company-description">
+                        Enterprise software solutions and field service management
+                    </p>
+                    <ul class="responsibilities">
+                        <li>Led full SDLC testing for mobile job management form system built in C#/.NET — requirements gathering, functional testing, and release verification</li>
+                        <li>Developed Power BI reporting dashboard for Dublin Airport client, connecting operational data sources to track field activity and site performance</li>
+                        <li>Created multi-page HR Analytics dashboard with interactive filters for headcount, attrition, job satisfaction, and demographic analysis</li>
+                        <li>Validated mobile SDK integrations and REST API functionality for enterprise workflow systems</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>C#/.NET</span>
+                        <span>Power BI</span>
+                        <span>SDLC</span>
+                        <span>Mobile Testing</span>
+                        <span>Business Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Featured Projects</h2>
         </div>
 
-        <div class="card">
-            <h3>Real-World Application Development Training</h3>
-            <p>
-                Completed hands-on training in real-world software application development focusing on 
-                Object-Oriented Programming, API integrations, endpoint testing, debugging, and SDLC practices. 
-                Worked with live systems, performed functional testing, and validated application performance.
-            </p>
+        <div class="projects-grid">
+            <!-- Project 1: Healthcare Testing -->
+            <div class="project-card featured">
+                <div class="project-label">Healthcare • QA</div>
+                <h3>Polygon EHR System – Healthcare Application Testing</h3>
+                <p>
+                    Comprehensive manual and API testing of enterprise Electronic Health Records system. 
+                    Validated authentication, RBAC, appointment workflows, patient record management, and 
+                    document handling. Created structured test cases in Postman covering CRUD operations, 
+                    edge cases, and integration points.
+                </p>
+                <div class="project-outcomes">
+                    <div class="outcome-item">
+                        <strong>Impact:</strong> Identified critical security vulnerabilities in role-based access controls
+                    </div>
+                    <div class="outcome-item">
+                        <strong>Testing:</strong> 150+ API endpoints validated with Postman collections
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span>Postman</span>
+                    <span>Healthcare EHR</span>
+                    <span>REST APIs</span>
+                    <span>Test Documentation</span>
+                    <span>HIPAA Compliance</span>
+                </div>
+            </div>
+
+            <!-- Project 2: SaaS Integration Testing -->
+            <div class="project-card featured">
+                <div class="project-label">SaaS • Payments • QA</div>
+                <h3>Joblogic Third-Party Accounting Integrations</h3>
+                <p>
+                    End-to-end testing of SaaS integrations with Sage 50, Xero, and QuickBooks accounting 
+                    platforms. Validated API authentication, invoice synchronization, payment reconciliation, 
+                    and financial data consistency across systems. Automated regression test suites using Playwright.
+                </p>
+                <div class="project-outcomes">
+                    <div class="outcome-item">
+                        <strong>Automation:</strong> Built 25+ Playwright test scripts reducing manual testing by 60%
+                    </div>
+                    <div class="outcome-item">
+                        <strong>Coverage:</strong> Validated 3 major accounting platform integrations
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span>Sage 50</span>
+                    <span>Xero</span>
+                    <span>QuickBooks</span>
+                    <span>Playwright</span>
+                    <span>API Testing</span>
+                    <span>Financial Systems</span>
+                </div>
+            </div>
+
+            <!-- Project 3: Data Pipeline -->
+            <div class="project-card">
+                <div class="project-label">Data Engineering</div>
+                <h3>Enterprise Data Pipeline – MongoDB to Analytics</h3>
+                <p>
+                    Built Python-based ETL pipeline using BeautifulSoup and MongoDB to extract, transform, 
+                    and load customer data for business intelligence. Implemented logging, error handling, 
+                    and performance optimization for large-scale datasets.
+                </p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>MongoDB</span>
+                    <span>BeautifulSoup</span>
+                    <span>ETL</span>
+                    <span>Data Warehousing</span>
+                </div>
+            </div>
+
+            <!-- Project 4: SQL Reporting -->
+            <div class="project-card">
+                <div class="project-label">Data Analytics • BI</div>
+                <h3>SQL Dashboards & Reporting Systems – Joblogic</h3>
+                <p>
+                    Designed and optimized complex SQL queries using CTEs and Views for timesheet tracking, 
+                    asset reporting, job analytics, and cost/invoice generation. Built Power BI and Tableau 
+                    dashboards visualizing operational KPIs for executive decision-making.
+                </p>
+                <div class="project-tech">
+                    <span>SQL Server</span>
+                    <span>Power BI</span>
+                    <span>Tableau</span>
+                    <span>CTEs</span>
+                    <span>Data Visualization</span>
+                </div>
+            </div>
+
+            <!-- Project 5: AI/ML -->
+            <div class="project-card">
+                <div class="project-label">AI/ML • Research</div>
+                <h3>Wildfire Prediction – MSc Dissertation</h3>
+                <p>
+                    Developed machine learning models (Random Forest, Logistic Regression, Gradient Boosting, SVM) 
+                    to forecast wildfire occurrences using weather datasets. Implemented full ML pipeline including 
+                    data preprocessing, feature engineering, model training, and evaluation.
+                </p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Random Forest</span>
+                    <span>Feature Engineering</span>
+                    <span>Model Evaluation</span>
+                </div>
+            </div>
+
+            <!-- Project 6: Data Warehouse -->
+            <div class="project-card">
+                <div class="project-label">Data Engineering</div>
+                <h3>Data Warehouse – Twiga Foods</h3>
+                <p>
+                    Architected and implemented enterprise data warehouse using SQL Server, Python, and SSIS. 
+                    Integrated Neo4j for graph analytics and created BI-ready dimensional models supporting 
+                    executive dashboards and predictive analytics.
+                </p>
+                <div class="project-tech">
+                    <span>SQL Server</span>
+                    <span>SSIS</span>
+                    <span>Python</span>
+                    <span>Neo4j</span>
+                    <span>Data Modeling</span>
+                </div>
+            </div>
+
+            <!-- Project 7: Mobile Enterprise -->
+            <div class="project-card">
+                <div class="project-label">Enterprise • SDLC</div>
+                <h3>Enterprise Form Rollout – Mobile SDK Integration</h3>
+                <p>
+                    Led SDLC for mobile field service form system (C#/.NET). Collaborated with stakeholders 
+                    on requirements, performed functional testing, validated REST API integrations, and 
+                    created technical documentation for enterprise deployment.
+                </p>
+                <div class="project-tech">
+                    <span>C#/.NET</span>
+                    <span>Mobile SDK</span>
+                    <span>SDLC</span>
+                    <span>REST APIs</span>
+                    <span>Technical Documentation</span>
+                </div>
+            </div>
+
+            <!-- Project 8: Power BI -->
+            <div class="project-card">
+                <div class="project-label">Business Intelligence</div>
+                <h3>Power BI Dashboards – HR Analytics & Airport Operations</h3>
+                <p>
+                    Built multi-page Power BI dashboards for HR analytics (headcount, attrition, satisfaction) 
+                    and Dublin Airport operations (field activity, site performance). Designed interactive 
+                    filters and drill-down capabilities for executive reporting.
+                </p>
+                <div class="project-tech">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Data Modeling</span>
+                    <span>Dashboard Design</span>
+                </div>
+            </div>
+
+            <!-- Project 9: API Debugging -->
+            <div class="project-card">
+                <div class="project-label">DevOps • Debugging</div>
+                <h3>API Integration & Diagnostic Tools</h3>
+                <p>
+                    Developed internal Python and JavaScript diagnostic scripts for debugging REST APIs, 
+                    SDKs, and webhooks. Performed root cause analysis using application logs, Postman, 
+                    and Chrome DevTools in production SaaS environments.
+                </p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Postman</span>
+                    <span>Chrome DevTools</span>
+                    <span>Log Analysis</span>
+                </div>
+            </div>
+
+            <!-- Project 10: Stripe Testing -->
+            <div class="project-card">
+                <div class="project-label">Payments • QA</div>
+                <h3>Stripe Payment Integration Testing – Healthcare</h3>
+                <p>
+                    Validated Stripe payment gateway integration for patient billing in Polygon EHR. 
+                    Tested payment flows, refund processing, subscription management, and webhook 
+                    event handling for healthcare transactions.
+                </p>
+                <div class="project-tech">
+                    <span>Stripe API</span>
+                    <span>Payment Testing</span>
+                    <span>Webhooks</span>
+                    <span>Healthcare Billing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Technical Skills</h2>
         </div>
 
-        <div class="card">
-            <h3>Wildfire Prediction – MSc Dissertation (AI/ML)</h3>
-            <p>
-                Built and compared Machine Learning models including Random Forest, Logistic Regression, 
-                Gradient Boosting, and SVM to forecast wildfire occurrences using weather datasets. 
-                Implemented full ML pipeline using Python for preprocessing, training, and evaluation.
-            </p>
-        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Quality Assurance & Testing</h3>
+                <div class="skill-items">
+                    <span class="skill-item">API Testing (Postman)</span>
+                    <span class="skill-item">Functional Testing</span>
+                    <span class="skill-item">Database Testing (SQL)</span>
+                    <span class="skill-item">Playwright Automation</span>
+                    <span class="skill-item">Test Case Design</span>
+                    <span class="skill-item">Bug Tracking & Reporting</span>
+                    <span class="skill-item">SDLC Management</span>
+                    <span class="skill-item">Integration Testing</span>
+                    <span class="skill-item">Regression Testing</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Enterprise Data Pipeline Development</h3>
-            <p>
-                Developed a Python-based data pipeline using BeautifulSoup and MongoDB to extract and 
-                process structured data for analytics. Included log analysis, debugging, and performance 
-                optimization for large-scale datasets.
-            </p>
-        </div>
+            <div class="skill-category">
+                <h3>Data Engineering & Analytics</h3>
+                <div class="skill-items">
+                    <span class="skill-item">SQL (Server, PostgreSQL, MySQL)</span>
+                    <span class="skill-item">Python (Pandas, NumPy)</span>
+                    <span class="skill-item">ETL Pipelines</span>
+                    <span class="skill-item">Data Warehousing</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">SSIS</span>
+                    <span class="skill-item">Neo4j (Graph Analytics)</span>
+                    <span class="skill-item">Data Modeling</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Data Warehouse – Twiga Foods</h3>
-            <p>
-                Designed and implemented a data warehouse using SQL Server, Python, and SSIS. 
-                Integrated Neo4j for graph analytics and created BI-ready datasets for reporting 
-                and decision-making dashboards.
-            </p>
-        </div>
+            <div class="skill-category">
+                <h3>Business Intelligence & Visualization</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">Tableau</span>
+                    <span class="skill-item">DAX</span>
+                    <span class="skill-item">Dashboard Design</span>
+                    <span class="skill-item">Matplotlib & Seaborn</span>
+                    <span class="skill-item">Reporting & Analytics</span>
+                    <span class="skill-item">KPI Development</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Enterprise Form Rollout – Mobile SDK Integration</h3>
-            <p>
-                Spearheaded SDLC for a mobile form system supporting field engineers. 
-                Worked with REST APIs, mobile SDK integrations, and technical documentation 
-                to improve enterprise workflow efficiency and system accuracy.
-            </p>
-        </div>
+            <div class="skill-category">
+                <h3>Software Development</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">C# / .NET</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">Visual Studio</span>
+                    <span class="skill-item">REST APIs</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Object-Oriented Programming</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>SQL Dashboards & Reporting Systems</h3>
-            <p>
-                Optimized complex SQL queries (CTEs, Views) and built reporting dashboards 
-                using Power BI, Tableau, and Stimulsoft to visualize enterprise data and 
-                identify operational inefficiencies.
-            </p>
-        </div>
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skill-items">
+                    <span class="skill-item">AWS (RDS, EC2, CloudWatch)</span>
+                    <span class="skill-item">Azure (Data Factory, Blob Storage)</span>
+                    <span class="skill-item">Database Management</span>
+                    <span class="skill-item">Performance Optimization</span>
+                    <span class="skill-item">Log Analysis</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>API Integration & Debugging Tools</h3>
-            <p>
-                Built internal diagnostic scripts using Python and JavaScript to debug REST APIs, 
-                SDKs, and webhooks. Performed root cause analysis using logs, Postman, and 
-                Chrome DevTools in SaaS environments.
-            </p>
-        </div>
+            <div class="skill-category">
+                <h3>Industry Integrations</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Sage 50</span>
+                    <span class="skill-item">Xero</span>
+                    <span class="skill-item">QuickBooks</span>
+                    <span class="skill-item">Stripe Payments</span>
+                    <span class="skill-item">Healthcare EHR Systems</span>
+                    <span class="skill-item">Financial Systems</span>
+                </div>
+            </div>
 
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Scikit-learn</span>
+                    <span class="skill-item">Random Forest</span>
+                    <span class="skill-item">Gradient Boosting</span>
+                    <span class="skill-item">Feature Engineering</span>
+                    <span class="skill-item">Model Evaluation</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Domain Expertise</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Healthcare (EHR, HIPAA)</span>
+                    <span class="skill-item">Banking & Fintech</span>
+                    <span class="skill-item">Payment Processing</span>
+                    <span class="skill-item">SaaS Platforms</span>
+                    <span class="skill-item">Field Service Management</span>
+                    <span class="skill-item">Enterprise Systems</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: muhammadahmedhassan60@gmail.com</p>
-    <p>Github: https://github.com/mahmedhassan1/ahmedhassan-portfolio/projects?query=is%3Aopen</p>
-    <p>LinkedIn: https://www.linkedin.com/in/muhammad-ahmed-hassan-87421419b/</p>
-    <p>Location: Ireland</p>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>Get In Touch</h2>
+        </div>
 
-    <!-- CHANGE #2: Added Product Engineer -->
-    <p style="margin-top: 15px;">
-        Open to roles: Software Developer | QA Engineer | Data Engineer | Technical Support Engineer | Product Engineer
-    </p>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p class="contact-lead">
+                    I'm actively seeking opportunities as a <strong>Data Engineer</strong>, 
+                    <strong>QA Engineer</strong>, <strong>Product Manager</strong>, or 
+                    <strong>Technical Support Engineer</strong> in healthcare, banking, payments, 
+                    or SaaS industries.
+                </p>
+                <p>
+                    With hands-on experience across enterprise systems, API testing, SQL optimization, 
+                    and data pipeline development, I bring both technical expertise and business acumen 
+                    to drive product quality and operational excellence.
+                </p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <a href="mailto:muhammadahmedhassan60@gmail.com">muhammadahmedhassan60@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <a href="https://www.linkedin.com/in/muhammad-ahmed-hassan-87421419b/" target="_blank">muhammad-ahmed-hassan</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Location</div>
+                        <span>Ireland (Open to Remote & Relocation)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-roles">
+                <h3>Open to Roles:</h3>
+                <div class="role-tags">
+                    <span>Data Engineer</span>
+                    <span>QA Engineer</span>
+                    <span>Product Manager</span>
+                    <span>Technical Support Engineer</span>
+                    <span>Software Developer</span>
+                    <span>Business Analyst</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 Ahmed Hassan | Software Engineer & Data Analytics Graduate</p>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 Ahmed Hassan. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>MSc Data Analytics Graduate | Ireland</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
