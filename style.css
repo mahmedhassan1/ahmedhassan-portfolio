@@ -10,29 +10,29 @@
     --color-bg-secondary: #1e293b;
     --color-bg-tertiary: #334155;
     --color-bg-card: #1e293b;
-    
+
     --color-accent-primary: #10b981;
     --color-accent-secondary: #059669;
     --color-accent-tertiary: #34d399;
-    
+
     --color-text-primary: #f1f5f9;
     --color-text-secondary: #cbd5e1;
     --color-text-tertiary: #94a3b8;
-    
+
     --color-border: rgba(148, 163, 184, 0.1);
     --color-border-hover: rgba(16, 185, 129, 0.4);
-    
+
     /* Typography */
     --font-primary: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-    
+
     /* Spacing */
     --spacing-xs: 8px;
     --spacing-sm: 16px;
     --spacing-md: 24px;
     --spacing-lg: 48px;
     --spacing-xl: 80px;
-    
+
     /* Animation */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,6 +65,13 @@ body {
 ::selection {
     background-color: var(--color-accent-primary);
     color: var(--color-bg-primary);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-accent-tertiary);
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
 /* ================================
@@ -165,6 +172,9 @@ body {
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 8px;
 }
 
 .menu-toggle span {
@@ -193,7 +203,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(52, 211, 153, 0.08) 0%, transparent 50%),
         linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
@@ -207,7 +217,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
@@ -270,19 +280,6 @@ body {
     letter-spacing: -0.5px;
 }
 
-.title-line {
-    display: block;
-    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-accent-primary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: fadeInUp 0.8s ease-out backwards;
-}
-
-.title-line:nth-child(1) { animation-delay: 0.1s; }
-.title-line:nth-child(2) { animation-delay: 0.2s; }
-.title-line:nth-child(3) { animation-delay: 0.3s; }
-
 .hero-description {
     font-size: 20px;
     line-height: 1.8;
@@ -290,6 +287,11 @@ body {
     max-width: 800px;
     margin-bottom: var(--spacing-lg);
     animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.hero-description strong {
+    color: var(--color-text-primary);
+    font-weight: 700;
 }
 
 .hero-cta {
@@ -377,6 +379,7 @@ body {
 
 section {
     padding: var(--spacing-xl) 0;
+    scroll-margin-top: 80px;
 }
 
 .section-header {
@@ -499,6 +502,10 @@ section {
     animation: fadeIn 0.6s ease-out backwards;
 }
 
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
 .timeline-item:nth-child(1) { animation-delay: 0.1s; }
 .timeline-item:nth-child(2) { animation-delay: 0.2s; }
 .timeline-item:nth-child(3) { animation-delay: 0.3s; }
@@ -539,6 +546,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -562,25 +570,7 @@ section {
     background: rgba(16, 185, 129, 0.1);
     padding: 6px 12px;
     border-radius: 6px;
-}
-
-.period.current-job {
-    background: var(--color-accent-primary);
-    color: var(--color-bg-primary);
-    font-weight: 600;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.85; }
-}
-
-.period.current-job {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(52, 211, 153, 0.2) 100%);
-    color: var(--color-accent-primary);
-    border: 1px solid rgba(16, 185, 129, 0.4);
-    font-weight: 600;
+    white-space: nowrap;
 }
 
 .period.current-job {
@@ -591,10 +581,10 @@ section {
 }
 
 @keyframes pulse-current {
-    0%, 100% { 
+    0%, 100% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
     }
-    50% { 
+    50% {
         box-shadow: 0 0 0 4px rgba(16, 185, 129, 0);
     }
 }
@@ -673,6 +663,7 @@ section {
 .project-card:nth-child(4) { animation-delay: 0.25s; }
 .project-card:nth-child(5) { animation-delay: 0.3s; }
 .project-card:nth-child(6) { animation-delay: 0.35s; }
+.project-card:nth-child(n+7) { animation-delay: 0.4s; }
 
 .project-card.featured {
     grid-column: span 1;
@@ -910,6 +901,17 @@ section {
    CERTIFICATIONS SECTION
    ================================ */
 
+.cert-group-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.cert-grid + .cert-group-title {
+    margin-top: var(--spacing-lg);
+}
+
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -930,6 +932,12 @@ section {
     border-color: var(--color-accent-primary);
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Data protection / governance certs: highlighted as the newest group */
+.cert-card-new {
+    border-color: rgba(16, 185, 129, 0.45);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, var(--color-bg-card) 60%);
 }
 
 .cert-icon {
@@ -1038,7 +1046,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     border-radius: 8px;
     color: var(--color-accent-primary);
     flex-shrink: 0;
@@ -1059,6 +1067,7 @@ section {
     font-size: 16px;
     font-weight: 500;
     transition: var(--transition-base);
+    word-break: break-word;
 }
 
 .contact-item a:hover {
@@ -1135,15 +1144,24 @@ section {
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
+    .about-highlights {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-highlights .highlight-card {
+        flex: 1 1 160px;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cert-grid {
         grid-template-columns: 1fr;
     }
@@ -1153,43 +1171,59 @@ section {
     .nav-menu {
         display: none;
     }
-    
+
     .menu-toggle {
         display: flex;
     }
-    
+
     .hero-title {
         font-size: 48px;
     }
-    
+
     .hero-description {
         font-size: 18px;
     }
-    
+
     .hero-cta {
         flex-direction: column;
     }
-    
+
     .section-header h2 {
         font-size: 36px;
     }
-    
+
     .section-number {
         font-size: 36px;
     }
-    
+
     .timeline {
         padding-left: 20px;
     }
-    
+
     .timeline-marker {
         left: -26px;
     }
-    
+
+    .timeline-content {
+        padding: var(--spacing-md);
+    }
+
+    .company-header {
+        flex-direction: column;
+    }
+
+    .company-header h3 {
+        font-size: 22px;
+    }
+
+    .project-card {
+        padding: var(--spacing-md);
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: var(--spacing-sm);
@@ -1202,33 +1236,34 @@ section {
         --spacing-lg: 32px;
         --spacing-xl: 60px;
     }
-    
+
     .hero-title {
         font-size: 36px;
     }
-    
+
     .hero-description {
         font-size: 16px;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         width: 100%;
         text-align: center;
     }
-    
-    .company-header {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-    
+
     .degree-header {
         flex-direction: column;
         gap: var(--spacing-sm);
     }
-    
-    .projects-grid {
+
+    .projects-grid,
+    .cert-grid,
+    .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+        flex-direction: column;
     }
 }
 
@@ -1262,6 +1297,10 @@ section {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
 
